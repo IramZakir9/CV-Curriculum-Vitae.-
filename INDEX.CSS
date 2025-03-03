@@ -1,0 +1,127 @@
+/* Reset Default Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Headings Animation */
+h1, h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    color: #ff5733;
+    border-bottom: 3px solid #ff5733;
+}
+
+h2 {
+    color: #3498db;
+    border-bottom: 3px solid #3498db;
+}
+
+h3 {
+    color: #2ecc71;
+    border-bottom: 3px solid #2ecc71;
+}
+
+/* Headings Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Contact Info Styling */
+.contact-info {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff5733;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    padding: 3px 5px;
+}
+
+a:hover {
+    color: #fff;
+    background: #ff5733;
+    border-radius: 5px;
+}
+
+/* Skills & Languages Section */
+.skills, .languages {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skills ul, .languages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li, .languages ul li {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Profile Section */
+.profile {
+    max-width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-info, .profile {
+        width: 90%;
+    }
+}
